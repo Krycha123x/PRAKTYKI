@@ -3,35 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona Testowa</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; }
-        header { background-color: #4CAF50; color: white; padding: 10px; }
-        section { margin-top: 20px; padding: 10px; background-color: white; border-radius: 5px; }
-        footer { margin-top: 20px; font-size: 0.8em; color: gray; }
-    </style>
+    <meta name="description" content="DriveHub - Wypożyczalnia samochodów">
+    <title>DriveHub - Wypożyczalnia Samochodów</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-<header>
-    <h1>Witaj na mojej stronie!</h1>
-</header>
+    <header>
+        <nav>
+            <h1>🚗 DriveHub</h1>
+            <ul>
+                <li><a href="#baner">Strona główna</a></li>
+                <li><a href="#onas">O nas</a></li>
+                <li><a href="#samochody">Samochody</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section>
-    <h2>Aktualności</h2>
-    <p>To jest pierwsza wersja treści. Możesz ją modyfikować na branchu <strong>feature</strong> i później scalić do <strong>main</strong>.</p>
-</section>
+    <main>
+        <section id="baner">
+            <div class="baner-box">
+                <div class="baner-tekst">
+                    <h2>Wynajmij Swoje Auto</h2>
+                    <p>Szybka rezerwacja, nowe samochody, bez formalności</p>
+                    <a href="#samochody" class="przycisk">Zobacz auta</a>
+                </div>
+                <img src="jaki-samochod-sportowy-warto-kupic.webp" alt="Samochód sportowy">
+            </div>
+        </section>
 
-<section>
-    <h2>Eksperymenty</h2>
-    <p>Dodawaj tutaj testowe zmiany, które chcesz sprawdzić zanim trafią na główną stronę.</p>
-</section>
 
-<footer>
-    <p>Strona testowa dla GitHub Pages. Aktualizacja: <span id="date"></span></p>
-    <p>Wykonawca krystian</p>
-</footer>
+        <section id="onas">
+            <h2>Dlaczego DriveHub?</h2>
+            <div class="zalety">
+                <div class="zaleta">
+                    <span class="ikona">⚡</span>
+                    <h3>Szybka Rezerwacja</h3>
+                    <p>Zarezerwuj w kilka minut</p>
+                </div>
+                <div class="zaleta">
+                    <span class="ikona">✨</span>
+                    <h3>Nowe Samochody</h3>
+                    <p>Flota od 2022 roku</p>
+                </div>
+                <div class="zaleta">
+                    <span class="ikona">📋</span>
+                    <h3>Bez Formalności</h3>
+                    <p>Wszystko online</p>
+                </div>
+            </div>
+        </section>
 
+
+        <section id="samochody">
+            <h2>Dostępne Samochody</h2>
+            <div class="filtry">
+                <select id="typ-filter">
+                    <option value="">Typ pojazdu</option>
+                </select>
+                <select id="skrzynia-filter">
+                    <option value="">Skrzynia</option>
+                </select>
+                <input type="range" id="cena-filter" min="0" max="500" value="600">
+                <span id="cena-tekst">500 zł</span>
+                <button id="resetuj-btn">Resetuj</button>
+            </div>
+
+            <p class="info-aut">Dostępnych aut: <strong id="licznik">0</strong></p>
+            <div id="kontener-aut" class="siatka-aut"></div>
+            <!-- java script wyszukuje dostepne auta -->
+        </section>
+
+
+
+        
+
+        <section id="kontakt">
+            <h2>Zarezerwuj Auto</h2>
+            <form id="formularz">
+                <input type="text" id="imie" placeholder="Imię i Nazwisko">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="telefon" placeholder="Telefon">
+                <select id="wybor-auta">
+                    <option value="">Wybierz Auto</option>
+                </select>
+                <input type="date" id="data-od">
+                <input type="date" id="data-do">
+                <button type="submit" class="przycisk">Wyślij</button>
+                <p id="komunikat-formularz"></p>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>📧 <a href="mailto:info@drivehub.pl">info@drivehub.pl</a> | 📞 +48 123 456 789</p>
+        <p>&copy; 2026 DriveHub</p>
+    </footer>
 
 </body>
 </html>

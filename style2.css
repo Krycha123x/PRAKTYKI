@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAGŁÓWEK */
+header {
+    background: linear-gradient(135deg, #004E89, #FF6B35);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+
+
+/* GŁÓWNE */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #004E89;
+    margin-bottom: 2rem;
+}
+
+.przycisk {
+    padding: 12px 30px;
+    background: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.przycisk:hover {
+    background: #E55A2B;
+}
+
+
+
+/* BANER */
+#baner {
+    background: linear-gradient(135deg, #004E89, #FF6B35);
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.baner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.baner-tekst h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.baner-tekst p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.baner-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+/* O NAS */
+#onas {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.zalety {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.zaleta {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.zaleta:hover {
+    transform: translateY(-5px);
+}
+
+.ikona {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.zaleta h3 {
+    color: #004E89;
+}
+
+
+
+
+
+/* SAMOCHODY */
+#samochody {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.filtry {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.filtry select,
+.filtry input {
+    padding: 0.7rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.filtry select:focus,
+.filtry input:focus {
+    border-color: #FF6B35;
+    outline: none;
+}
+
+#cena-tekst {
+    font-weight: bold;
+    color: #FF6B35;
+}
+
+#resetuj-btn {
+    padding: 0.7rem 1.5rem;
+    background: #1AC8ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#resetuj-btn:hover {
+    background: #18B5D1;
+}
+
+.info-aut {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.siatka-aut {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.karta-auta {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.karta-auta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.karta-auta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-auta {
+    padding: 1.5rem;
+}
+
+.info-auta h3 {
+    color: #004E89;
+    margin-bottom: 0.3rem;
+}
+
+.typ-auta {
+    color: #FF6B35;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.szczegoly-auta {
+    background: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.cena-auta {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF6B35;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.przyciski-auta {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.przyciski-auta button {
+    flex: 1;
+    padding: 8px;
+    background: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.przyciski-auta button:hover {
+    background: #E55A2B;
+}
+
+
+
+
+/* FORMULARZ */
+#kontakt {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form input,
+form select {
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #FF6B35;
+    outline: none;
+}
+
+form button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+#komunikat-formularz {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    min-height: 1.5rem;
+}
+
+#komunikat-formularz.sukces {
+    color: #27AE60;
+}
+
+#komunikat-formularz.blad {
+    color: #E74C3C;
+}
+
+
+
+
+
+/* STOPKA */
+footer {
+    background: linear-gradient(135deg, #004E89, #FF6B35);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+
