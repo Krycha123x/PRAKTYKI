@@ -66,6 +66,7 @@ section {
 }
 
 h2 {
+    align-items: center;
     font-size: 2rem;
     color: #004E89;
     margin-bottom: 2rem;
