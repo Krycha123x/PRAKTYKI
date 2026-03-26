@@ -64,9 +64,11 @@ main {
 section {
     margin: 3rem 0;
 }
-
-h2 {
+.napis{
     align-items: center;
+}
+h2 {
+    
     font-size: 2rem;
     color: #004E89;
     margin-bottom: 2rem;
